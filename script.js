@@ -2,7 +2,7 @@ const navBtn = document.getElementById("navbar-expand");
 const navbarUl = document.querySelector(".navbar ul");
 
 
-
+//  add active class to my navbar to show in small size
 navBtn.addEventListener("click", () => {
     navbarUl.classList.toggle("active");
 
@@ -15,7 +15,7 @@ navBtn.addEventListener("click", () => {
     }
 });
 
-
+// show navbar when i scroll 600px down in white color it add just sticky position class
 window.addEventListener('scroll',(e)=>{
     if(window.scrollY > 600){
         document.querySelector("header").classList.add('sticky-position')
@@ -25,7 +25,7 @@ window.addEventListener('scroll',(e)=>{
     // console.log(window.scrollY)
 })
 
-
+// for hide when in small screen the navbar when we click any links 
 const navLinks = document.querySelectorAll(".nav-link")
 navLinks.forEach( link =>{
     link.addEventListener('click',()=>{

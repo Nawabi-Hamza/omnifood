@@ -575,7 +575,12 @@ header {
 /* ===============End Meal section================= */
 
 /* ===============Start Gallery Section=============== */
+/* .gallery .container{
+    max-width: 1500px;
+} */
 .gallery{
+    max-width: 1800px;
+    margin: auto;
     background-color: var(--bg-primary-color);
     display: grid;
     grid-template-columns: 55% 1fr;
@@ -890,8 +895,6 @@ header {
 }
 /* ================End Feature Section================ */
 
-
-
 /* =============Start Contact Design============= */
 .contact.container{
     padding: 0 32px;
@@ -1002,3 +1005,98 @@ header {
     }
 }
 /* ==============End Contact Design============== */
+
+/* ===========Start Footer Section=========== */
+.footer{
+    padding: 128px 32px;
+    border-top: 1px solid #eee;
+}
+.footer .footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2,220px) repeat(3,147px);
+    justify-content: space-between;
+}
+.footer .footer-grid > div{
+    > h3{
+        font-size: 18px;
+        font-weight: 600;
+        color: #555555;
+        margin-bottom: 38px;
+    }
+    > a{
+        /* background-color: red; */
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: #767676;
+        margin-top: 22px;
+    }
+}
+.footer .footer-grid .contact{
+    > a:last-child{
+        margin-top: 0;
+    }
+    > p {
+        margin-top: auto;
+        margin-bottom: 22px;
+        font-size: 14px;
+    }
+}
+.footer .footer-grid .socials{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    > p {
+        margin-top: auto;
+        margin-bottom: 22px;
+        font-size: 14px;
+    }
+}
+.footer .socials img{
+    width: 164px;
+    height: 22px;
+}
+.footer .socials .links{
+    display:flex;
+    margin-top: 33px;
+    gap: 24px
+}
+.footer .socials ion-icon {
+    height: 24px;
+    width: 24px;
+}
+@media screen and (max-width:950px) {
+    .footer .footer-grid{
+        grid-template-columns: repeat(5,131px);
+    }
+    .footer .footer-grid > div{
+        > h3{
+            font-size: 14.4px;
+        }
+        > p,
+        > a{
+            font-size: 12.8px;
+        }
+    }
+    .footer .socials img{
+        width: 131px;
+        height: 18px;
+    }
+    .footer .socials ion-icon {
+        height: 19px;
+        width: 19px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .footer .footer-grid{
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 3em;
+    }
+    .socials,
+    .contact{
+        grid-column: span 2;
+        grid-row: 2; 
+    }
+}
+/* ============End Footer Section============ */
