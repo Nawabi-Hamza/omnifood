@@ -281,10 +281,10 @@
         <div class="contact-form">
             <h2 class="second-heading">Get your first meal for free!</h2>
             <p>Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
-            <form>
+            <form action="https://formspree.io/f/xpwzwded" method="POST">
                 <label>
                     <span>Full Name</span>
-                    <input type="text" name="username" placeholder="John Smith">
+                    <input type="text" name="name" placeholder="John Smith">
                 </label>
                 <label>
                     <span>Email address</span>
@@ -292,16 +292,16 @@
                 </label>
                 <label>
                     <span>Where did you hear from us?</span>
-                    <select name="" id="">
-                        <option value="">Please choose one option</option>
-                        <option value="">Friends and family</option>
-                        <option value="">YouTube Video</option>
-                        <option value="">Podcast</option>
-                        <option value="">Facebook ad</option>
-                        <option value="">Other</option>
+                    <select name="Find us from" id="">
+                        <option value="none">Please choose one option</option>
+                        <option value="Friends and family">Friends and family</option>
+                        <option value="YouTube Video">YouTube Video</option>
+                        <option value="Podcast">Podcast</option>
+                        <option value="Facebook ad">Facebook ad</option>
+                        <option value="Other">Other</option>
                     </select>
                 </label>
-                <button type="button" class="btn">Sign up now</button>
+                <button type="submit" class="btn">Sign up now</button>
             </form>
         </div>  
         <img src="content/img/eating.jpg" alt="">
