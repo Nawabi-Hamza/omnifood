@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Rubik,sans-serif;
     transition: all .4s ease;
+    scroll-behavior: smooth;
 }
 :root{
     --primary-color: #E67E22;  
