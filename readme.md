@@ -1,4 +1,4 @@
-# Simple Tailwind Project
+# Simple Project 
 
 ## Usage
 Clone the repo:
