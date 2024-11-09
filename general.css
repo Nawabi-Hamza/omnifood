@@ -1,4 +1,10 @@
-
+:root{
+    --primary-color: #E67E22;  
+    --shade-primary-color: #CF711F;
+    --white-color: #F8FFFF;
+    --bg-primary-color: #FDF2E9;
+    --black-color: #333;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +12,12 @@
     font-family: Rubik,sans-serif;
     transition: all .4s ease;
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
-:root{
-    --primary-color: #E67E22;  
-    --shade-primary-color: #CF711F;
-    --white-color: #F8FFFF;
-    --bg-primary-color: #FDF2E9;
-    --black-color: #333;
+*::selection{
+    /* background-color: brown; */
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 /* =============Start General Style============== */
 .container{
